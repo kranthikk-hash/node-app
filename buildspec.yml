@@ -24,4 +24,6 @@ phases:
         #- printf '[{"name":"surveybuilder-testing","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
         #- cat imagedefinitions.json
 artifacts:
-    files: imagedefinitions.json
+  discard-paths: yes
+  files:
+    - imagedefinitions.json
