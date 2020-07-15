@@ -1,0 +1,28 @@
+def workspace;
+node{
+    stage('checkout')
+    {
+        https://github.com/kranthikumar77/project1.git
+        workspace = pwd()
+        stage('static code analysis')
+        {
+            echo "statis code analysis"
+        }
+        stage('build')
+        {
+            echo "build the code"
+        }
+        stage('unit testing')
+        {
+            echo "unit testing"
+            
+        }
+        stage('delivery')
+        {
+            echo "delivery the code"
+        }
+    }
+}
+script{
+end
+}
