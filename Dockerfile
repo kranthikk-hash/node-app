@@ -1,14 +1,14 @@
+#FROM ubuntu:18.04
+
 FROM node:10
-
-WORKDIR /kranthi/app
-
-COPY package.json ./
 
 RUN mkdir -p /mnt/datastore
 
-RUN npm install
+WORKDIR /mnt/datastore
 
 COPY . .
+
+RUN npm install
 
 EXPOSE 8081
 
