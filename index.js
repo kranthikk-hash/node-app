@@ -4,7 +4,7 @@ var app = express()
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello World!, How are you hope your having good day andugguguuuuuuuuuu,l/o;hbi/g' happy diwali!!')
+  res.send('Hello World!, How are you hope your having good day happy diwali!!')
 })
 
 //Launch listening server on port 8081
